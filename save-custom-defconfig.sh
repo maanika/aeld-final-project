@@ -3,5 +3,5 @@
 source shared.sh
 
 cd buildroot
-make savedefconfig BR2_EXTERNAL=../base_external BR2_DEFCONFIG=../base_external/configs/${CUSTOM_DEFCONFIG_NAME}
+make savedefconfig BR2_EXTERNAL=${EXTERNAL_REL_BUILDROOT} BR2_DEFCONFIG=${CUSTOM_DEFCONFIG_REL_BUILDROOT}
 

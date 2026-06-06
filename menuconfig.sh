@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd buildroot
-make menuconfig BR2_EXTERNAL=../base_external
+make menuconfig BR2_EXTERNAL=${EXTERNAL_REL_BUILDROOT}
